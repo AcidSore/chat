@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="client.StartWindowController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <HBox VBox.vgrow="ALWAYS">
+        <TextField fx:id="information" visible="false" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <HBox VBox.vgrow="ALWAYS">
+        <TextField fx:id="login" promptText="enter the login" HBox.hgrow="ALWAYS"/>
+        <PasswordField fx:id="password" promptText="enter the password" HBox.hgrow="ALWAYS"/>
+        <Button fx:id="Auth" text="Authorize" onAction="#TryToAuth"/>
+    </HBox>
+
+<!--    <HBox VBox.vgrow="ALWAYS">-->
+<!--        &lt;!&ndash;<Button fx:id="Enroll" text="Enroll" onAction="#Enroll" HBox.hgrow="ALWAYS"/>&ndash;&gt;-->
+<!--    </HBox>-->
+
+<!--    <HBox fx:id="registration" VBox.vgrow="ALWAYS" visible="false">-->
+<!--        <TextField fx:id="loginFieldBD" promptText="enter the login" HBox.hgrow="ALWAYS"/>-->
+<!--        <PasswordField fx:id="passwordFieldBD" promptText="enter the password" HBox.hgrow="ALWAYS"/>-->
+<!--        <TextField fx:id="nicknameBD" promptText="enter the nickname" HBox.hgrow="ALWAYS"/>-->
+<!--        <HBox HBox.hgrow="ALWAYS">-->
+<!--            &lt;!&ndash;<Button fx:id="Sign" text="Sign in" onAction="#TryToSignIn"/>&ndash;&gt;-->
+<!--        </HBox>-->
+<!--    </HBox>-->
+
+</VBox>
